@@ -30,6 +30,11 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Story Generator API")
 
+@app.get("/")
+def read_root():
+    return {"status": "Magic Backend is Online!", "model_loaded": ctx.model is not None}
+
+
 # Setup CORS for the React frontend
 app.add_middleware(
     CORSMiddleware,
