@@ -1,0 +1,37 @@
+# Environments
+venv/
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / React
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vscode/
+
+# Large Model Files
+ckpt_best.pt
+*.pt
+*.bin
+*.h5
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite3
